@@ -1,0 +1,126 @@
+ERROR - 2024-02-25 09:27:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect(NULL, 'root', '', 'crud_ci', NULL, '/Applications/X...', 0)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#9 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+#6 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-25 09:27:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-25 09:29:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect(NULL, 'root', '', 'crud_ci', NULL, '/Applications/X...', 0)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#9 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+#6 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-25 09:29:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserCrud.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-25 09:32:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php(185): mysqli->real_connect(NULL, 'root', '', 'crud_ci', NULL, '/Applications/X...', 0)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(12): CodeIgniter\BaseModel->findAll()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#9 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in E:\XAMPP\htdocs\sample_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\XAMPP\htdocs\sample_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\XAMPP\htdocs\sample_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\XAMPP\htdocs\sample_project\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\XAMPP\htdocs\sample_project\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\XAMPP\htdocs\sample_project\app\Controllers\UserCrud.php(12): CodeIgniter\BaseModel->findAll()
+#6 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+#7 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#8 E:\XAMPP\htdocs\sample_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\XAMPP\htdocs\sample_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-25 09:32:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+ORDER BY `id` DESC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserCrud.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
